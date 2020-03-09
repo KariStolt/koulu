@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Fast reader</title>
+</head>
+<body>
+    <div class="text">
+        <p id="readableText">moi</p>
+    </div>
+    <textarea id="textArea" class="centered" rows="4" cols="50" placeholder="Type / paste text you want to read fast"></textarea>
+    
+    <button class="centered" type="button" onclick="saveToArray()">add to array</button>    
+    <button class="centered" type="button" onclick="changeArray()">number</button>
+    
+    <form>
+        <select class="centered" name="wpm" id="wordsPerMinute">
+            <option value="60">60</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="400">400</option>
+        </select>
+    </form>
+</body>
+</html>
